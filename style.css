@@ -1,0 +1,103 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    line-height: 1.5;
+    background-color: #000000;
+    color: #ffffff;
+}
+body::before {
+    content: "";
+    background: url("ASSETS/bgimghd1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;    
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.container {
+    color: #fff;
+}
+.home {
+    height: 100vh;
+}
+.home>span>a {
+    text-decoration: none;
+    color: grey;
+}
+.home>span {
+    background: transparent;
+}
+.home-h1{
+    text-align: center;
+    font-size: 50pt;
+}
+.home-h2{
+    text-align: center;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons>a {
+    background-color: #fff;
+}
+#skills {
+    text-align: center;
+    background: burlywood;
+    height: 400px;
+}
+#about-me {
+    color: rgb(100, 100, 100);
+}
+#about-me>h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+span {
+    color: grey;
+    background: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+span:hover {
+    background: #fff;
+}
+.comments {
+    background: linear-gradient(to right, rgb(18, 17, 119),rgb(24, 24, 226));
+    height: 60vh;
+}
+.comments>h1 {
+    padding: 20px;
+}
+form {
+    margin: 20px;
+}input {
+    position: absolute;
+    left: 100px;
+}
+input[name=Message] {
+    width: 400px;
+    height: 100px;
+}
+input[type=submit] {
+    position: relative;
+    top: 100px;
+    left: 70px;
+    padding: 10px;
+    width: 100px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+input[type=submit]:hover {
+    background: #fff;
+    color: grey;
+}
