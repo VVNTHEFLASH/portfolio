@@ -9,16 +9,21 @@
 </head>
 <body>
     <div class="container">
+        <!-- Home Division -->
         <div class="home">
+            <!-- My Name -->
             <h1>VISHNU VARDHAN</h1>
+            <!--Page Switch button -->
             <span>Home</span>
             <span><a href="#skills">Skills</a></span>
             <span>Portfolio</span>
             <span><a href="#about-me">About Me</a></span>
             <span>Contact</span>
+            <!-- Main Head -->
             <div class="home-h1">
                 <h3>WEB DEVELOPMENT CREATIVE SOLUTIONS</h3>
             </div>
+            <!-- ICONS FOR SOCIAL MEDIA & WORK MEDIA -->
                 <div class="icons">
                 <a href="https://github.com/VVNTHEFLASH"><img src="ASSETS/GITHUB ICON.png" alt="icon"></a>
                 <a href="https://codepen.io/vvntheflash"><img src="ASSETS/CODEPEN ICON.png" alt="icon"></a>
@@ -29,34 +34,92 @@
                 <h2>I OFFER CREATIVE SOLUTIONS FOR EVERY WEB-BASED PROJECT YOU CAN THINK OF. BUILD AWESOME WEBSITES</h2>
             </div>
         </div>
-        <div id="skills">
-            <h1>SKILLS</h1>
-            <table class="table">
-                <tr>
-                    <th>HTML</th>
-                    <th>CSS</th>
-                    <th>JavaScript</th>
-                </tr>
-                <tr>
-                    <td>HTML stands for HyperText Markup Language. It’s the core markup language of every web page. With HTML, we use it to build the structure of the website block by block with HTML elements. This is all the web programmer start from and it’s super easy to learn.</td>
-                    <td>The CSS stands for Cascading Style Sheets. Obviously, CSS is a style sheets, it’s able to control how the website looks like and how the website should appear at the front-end of the web page.</td>
-                    <td>When you’d like to make your site more interactive or add motion logics to your site. We use JavaScript to implement it. For example, you can display a pop-up window or dynamically change the HTML and CSS code with JavaScript.</td>
-                </tr>
-            </table>
+        <!-- Skills Section -->
+        <div id="skills" class="grid-skills">
+            <div><h1>SKILLS</h1></div>
+            <div><h1>HTML</h1>
+                <label>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                </label>
+            </div>
+            <div><h1>CSS</h1>
+                <label>
+                    <li>CSS stands for Cascading Style Sheets</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                </label>
+            </div>
+            <div><h1>JS</h1>
+                <label>
+                    <li>JavaScript is the Programming Language for the Web.</li>
+                    <li>JavaScript can update and change both HTML and CSS.</li>
+                    <li>JavaScript can calculate, manipulate and validate data.</li>
+                </label>
+            </div>
         </div>
-        <h1>My Portfolio</h1>
+        <!-- My Portfolio -->
+        <h1 id="portfolio-head">My Portfolio</h1>
         <div class="portfolio">
-            
-            <div class="box1">Super Over</div>
-            <div class="box2">Penalty Shoot</div>
-            <div class="box3">Dice Game</div>
-            <div class="box4">Portfolio</div>
+            <div class="box0">
+                <h4>Cric-ScoreBoard Made with Prograd</h4>
+                <a href="https://vvntheflash.github.io/lab-cricpro-scoreboard/">
+                    <img src="ASSETS/Lab-CS-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box1">
+                <h4>Super Over</h4>
+                <a href="https://vvntheflash.github.io/superover/">
+                    <img src="ASSETS/SO-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box2">
+                <h4>Penalty Shoot</h4>
+                <a href="https://vvntheflash.github.io/PenaltyShootout/">
+                    <img src="ASSETS/PS-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box3">
+                <h4>Dice Game</h4>
+                <a href="https://vvntheflash.github.io/DiceGame/">
+                    <img src="ASSETS/DG-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box4">
+                <h4>Portfolio</h4>
+                <a href="https://vvntheflash.github.io/portfolio/">
+                    <img src="ASSETS/PF-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box5">
+                <h4>KeyBoard Layout</h4>
+                <a href="https://vvntheflash.github.io/keyboardlayout/">
+                    <img src="ASSETS/KL-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box6">
+                <h4>Replicate What's The Difference Image</h4>
+                <a href="https://vvntheflash.github.io/ReplicateImage/">
+                    <img src="ASSETS/RWDI-COVER.png" alt="cover"></a>
+            </div>
+            <div class="box7">
+                <h4>Coming Soon.....</h4>
+                <a href="#">
+                    <img src="ASSETS/Coming-soon.jpg" alt="cover"></a>
+            </div>
+            <div class="box8">
+                <h4>Coming Soon.....</h4>
+                <a href="#">
+                    <img src="ASSETS/Coming-soon.jpg" alt="cover"></a>
+            </div>
         </div>
         <div id="about-me">
             <h1>About Me</h1>
-            <label>Vishnu Vardhan S</label><br>
-            <label>Currently Studying @ Panimalar Engineering College</label><br>
-            <label>Prograd New Age Tech Student</label><br>
+            <p>I'm <strong>Vishnu Vardhan</strong> And I Rise And Born In <strong>Chennai.</strong> <br>
+            I'm Currently Pursuing My Under Degree at Panimalar Engineering College. <br>
+            I'm Completed My Diploma in 2017 Then Worked 2 year in Small-scale Industry. <br>
+            I'm a Average Player When things comes under Studying. <br>
+            And I Have a Great Leadership Quality And I Can Manage a Group of Peoples. <br>
+            </p>
         </div>
         <div class="comments">
             <h1>COMMENTS</h1>

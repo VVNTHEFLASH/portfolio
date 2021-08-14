@@ -49,15 +49,34 @@ body::before {
 }
 #skills {
     text-align: center;
-    background: burlywood;
+    background-image: linear-gradient(rgb(58, 52, 52) , rgb(56, 50, 50));
     height: 400px;
 }
-#about-me {
-    color: rgb(100, 100, 100);
+label {
+    text-align: justify;
 }
-#about-me>h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
+label>li {
+    margin: 5px;
+}
+.grid-skills {
+    display: grid;
+    grid-gap: 5px;
+}
+.grid-skills>div:nth-child(1) {
+    background: linear-gradient(to right,orangered, gold, orangered);
+    grid-row: 1/2;
+    grid-column: 1/4;
+    height: 100px;
+}
+.grid-skills>div:nth-child(2) {
+    background-color: orangered;
+}
+.grid-skills>div:nth-child(3) {
+    background: rgb(80,80,200);
+    
+}
+.grid-skills>div:nth-child(4) {
+  background:gold;
 }
 span {
     color: grey;
@@ -65,9 +84,11 @@ span {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    transition:ease 1s;
 }
 span:hover {
     background: #fff;
+    cursor: pointer;
 }
 .comments {
     background: linear-gradient(to right, rgb(18, 17, 119),rgb(24, 24, 226));
@@ -100,4 +121,37 @@ input[type=submit] {
 input[type=submit]:hover {
     background: #fff;
     color: grey;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    background: black;
+}
+.portfolio img {
+    border: none;
+    margin: 20px; 
+    transition: 0.5s;
+    width: 225px;
+    height: 150px;
+    opacity: 0.1;
+}
+.portfolio img:hover {
+    width: 450px;
+    height: 300px;
+    opacity: 1;
+}
+#portfolio-head {
+    text-align: center;
+    background-image:linear-gradient(to left,black,white);
+    text-transform: uppercase;
+}
+#about-me {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#about-me>h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
